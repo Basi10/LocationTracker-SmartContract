@@ -71,11 +71,32 @@ function CreateEmployee(){
   };
 
   return (
-    <div className="container d-flex flex-column align-items-center justify-content-center vh-100">
-      <button onClick={getBalance}>Get Balance</button>
-      <p>Balance: {balance.toString()}</p>
+    <div className="container d-flex flex-column align-items-center justify-content-center  vh-100">
+      <form className="d-flex flex-row align-items-center ml-2 mt-4">
+          <label for="getBalance">Employee Address:</label>
+          <input type="text" id="getBalance" name="getBalance" />
+      </form>
+      <form className="d-flex flex-row align-items-center ml-2 mt-4">
+        <label htmlFor="getBalance" className="ml-2">Agreed Fee:</label>
+        <input type="text" id="getBalance" name="getBalance" />
+      </form>
+      <form className="d-flex flex-row align-items-center ml-2 mt-4">
+        <label htmlFor="getBalance" className="ml-2">Time Allocated:</label>
+        <input type="text" id="getBalance" name="getBalance mt-4"/>
+      </form>
+      <form className="d-flex flex-row align-items-center ml-2 mt-4">
+        <label htmlFor="getBalance" className="ml-2">Latitude:</label>
+        <input type="text" id="getBalance" name="getBalance" />
+      </form>
+      <form className="d-flex flex-row align-items-center ml-2 mt-4">
+        <label htmlFor="getBalance" className="ml-2">Longitude:</label>
+        <input type="text" id="getBalance" name="getBalance" />
+      </form>
+      <button className="btn btn-dark mt-4" onClick={getBalance}>Get Balance</button>
+      <p className="mt-4">Balance: {balance.toString()}</p>
     </div>
   );
+  
 
 }
 
