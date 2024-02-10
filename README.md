@@ -15,10 +15,42 @@ as an escrow and based on the compliance pay the employee. The rest is returned 
 
 The project requires the following: Node.Js
 
+## Usage
+
+Build the Docker images.
+
+```bash
+make build
+```
+
+Start the Docker containers in the background.
+
+```bash
+make up
+```
+
+Stop and remove the Docker containers.
+
+```bash
+make down
+```
+
+Start the Hardhat node in the running container.
+
+```bash
+make start-backend
+```
+
+Start the admin-frontend in the running container.
+
+```bash
+make start-frontend
+```
+
 ## Contributors
 
 - Basilel Birru
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
