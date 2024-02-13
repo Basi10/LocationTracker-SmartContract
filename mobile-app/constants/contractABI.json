@@ -1,0 +1,132 @@
+[
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "empAddress",
+        "type": "address"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "lat",
+        "type": "uint256"
+      },
+      {
+        "name": "lon",
+        "type": "uint256"
+      },
+      {
+        "name": "allowedDistance",
+        "type": "uint256"
+      }
+    ],
+    "name": "createEmployee",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "empAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getEmployeeDetail",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "empAdderss",
+        "type": "address"
+      },
+      {
+        "name": "lat",
+        "type": "uint256"
+      },
+      {
+        "name": "lon",
+        "type": "uint256"
+      },
+      {
+        "name": "etimestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "ingestCoordinate",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getEmployees",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "lat2",
+        "type": "uint256"
+      },
+      {
+        "name": "lon2",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateDistance",
+    "outputs": [
+      {
+        "name": "dist",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  }
+]
